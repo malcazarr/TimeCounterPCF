@@ -1,0 +1,15 @@
+.spanData{
+    font-style: normal;
+    font-variant: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'SegoeUI', 'Segoe UI';
+    font-weight: 600;
+    font-size: 1rem;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+}
