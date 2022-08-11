@@ -1,4 +1,3 @@
-import { InputType } from "zlib";
 import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class TimeCounter implements ComponentFramework.StandardControl<IInputs, IOutputs> {
@@ -48,12 +47,9 @@ export class TimeCounter implements ComponentFramework.StandardControl<IInputs, 
     {
         // Add code to update control view
         
-        if (context.parameters.SubstatusAginCounter.raw){
-
+        if (context.parameters.SubstatusAgeingCounter.raw){
             let currentDate = new Date();
-            let data = context.parameters.SubstatusAginCounter.raw;
-            console.log(currentDate)
-            console.log(data)
+            let data = context.parameters.SubstatusAgeingCounter.raw;
 
             var diff = currentDate.getTime() - data.getTime();
             diff = diff/ 1000;
@@ -92,7 +88,7 @@ export class TimeCounter implements ComponentFramework.StandardControl<IInputs, 
     public getOutputs(): IOutputs
     {
         return {
-            SubstatusAginCounter: this._value
+            SubstatusAgeingCounter: this._value
         };
     }
 
@@ -145,10 +141,8 @@ export class TimeCounter implements ComponentFramework.StandardControl<IInputs, 
     private timerControl = {
         Start: (): NodeJS.Timer =>{
             if (this.timer == null){
-                console.log('returning new instance');
                 return setInterval(this._interval, 1000);
             }
-            console.log('Returning the same instance');
             return this.timer;
         },
         Stop: (): void =>{

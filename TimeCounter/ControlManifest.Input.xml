@@ -18,7 +18,7 @@
       -->
     </external-service-usage>
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
-    <property name="SubstatusAginCounter" display-name-key="SubstatusAginCounter_Property" description-key="SubstatusAginCounter_Desc_Key" of-type="DateAndTime.DateAndTime" usage="bound" required="true" />
+    <property name="SubstatusAgeingCounter" display-name-key="SubstatusAgeingCounter_Property" description-key="SubstatusAgeingCounter_Desc_Key" of-type="DateAndTime.DateAndTime" usage="bound" required="true" />
     <!--
       <type-group name="numbers">
         <type>Whole.None</type>
