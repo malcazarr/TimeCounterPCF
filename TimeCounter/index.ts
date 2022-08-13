@@ -47,9 +47,9 @@ export class TimeCounter implements ComponentFramework.StandardControl<IInputs, 
     {
         // Add code to update control view
         
-        if (context.parameters.SubstatusAgeingCounter.raw){
+        if (context.parameters.SubstatusAgingCounter.raw){
             let currentDate = new Date();
-            let data = context.parameters.SubstatusAgeingCounter.raw;
+            let data = context.parameters.SubstatusAgingCounter.raw;
 
             var diff = currentDate.getTime() - data.getTime();
             diff = diff/ 1000;
@@ -88,7 +88,7 @@ export class TimeCounter implements ComponentFramework.StandardControl<IInputs, 
     public getOutputs(): IOutputs
     {
         return {
-            SubstatusAgeingCounter: this._value
+            SubstatusAgingCounter: this._value
         };
     }
 
