@@ -12,3 +12,4 @@
 # msbuild output directories
 /bin
 /obj
+/PBI_24808_SubstatusAging
